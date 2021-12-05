@@ -1,0 +1,41 @@
+<html lang="en"><head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Playlist <%- name %></title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" media="all" onload="this.media='all'; this.onload=null;">
+  </head>
+   <body>
+        <div class="container">
+      <div class="row col-md-12 col-md-offset-2 custyle mx-auto">
+         <h1 class="mx-auto">Playlist <%- name %></h1>
+
+<table class="table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th>Position</th>
+                  <th>Name</th>
+                  <th>Author</th>
+                  <th>Url</th>
+                  <th>Source</th>
+               </tr>
+               <%
+                  let i = 0
+                  tracks.forEach(track => {
+
+                  %>
+               <tr>
+                  <td><%=  i =  i +1 %></td>
+                  <td><%=  track.title  %></td>
+                  <td><%=  track.author  %></td>
+                  <td><%=  track.uri  %></td>
+                  <td><%=  track.source  %></td>
+               </tr>
+               <%
+                  });
+                  %>
+            </thead>
+         </table>
+      </div>
+</div>
+</body>
+</html>
