@@ -17,5 +17,5 @@ Small API to manage apollo's playlists
 ```dotenv
 API_KEY=random_long_string
 PORT=3030
-MONGODB_CONNECTION_URL=MONGODB_CONNECTION_URL=mongodb+srv://xx:xx@xx.xx.mongodb.net/<database_name>
+MONGODB_CONNECTION_URL=mongodb+srv://xx:xx@xx.xx.mongodb.net/<database_name>
 ```
