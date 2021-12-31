@@ -11,6 +11,7 @@ steps:
     image: plugins/docker
     settings:
       repo: ghcr.io/phazorworks/playlists-api
+      registry: ghcr.io
       username: gigafyde
       password:
         from_secret: github-token
