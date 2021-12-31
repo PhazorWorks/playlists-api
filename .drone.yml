@@ -1,0 +1,21 @@
+kind: pipeline
+type: docker
+name: build-amd64
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: docker-build
+    image: plugins/docker
+    settings:
+      repo: ghcr.io/phazorworks/playlists-api
+      username: gigafyde
+      password:
+        from_secret: github-token
+      tags: latest
+      force_tag: true
+    when:
+      branch:
+        - master
