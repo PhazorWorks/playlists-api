@@ -4,5 +4,26 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "mongoose": "^6.0.14"
-  }
+  },
+  "name": "playlists-api",
+  "description": "Small API to manage apollo's playlists",
+  "version": "1.1.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xyro-Bot/playlists-api.git"
+  },
+  "author": "SyntaxDragon",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Xyro-Bot/playlists-api/issues"
+  },
+  "homepage": "https://github.com/Xyro-Bot/playlists-api#readme"
 }
